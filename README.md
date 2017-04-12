@@ -32,7 +32,7 @@ docker run -dt \
            -p 3001:3001 \
            -v $(PWD):/source \
            -w /source \
-           ustwo/browser-sync \
+           mandelbrew/browser-sync \
            start --server --files "css/*.css"
 ```
 
@@ -54,7 +54,7 @@ docker run -dt \
            --link myapp \
            -p 3000:3000 \
            -p 3001:3001 \
-           ustwo/browser-sync \
+           mandelbrew/browser-sync \
            start --proxy "myapp:8000" --files "css/*.css"
 ```
 
@@ -83,7 +83,7 @@ docker run -dt \
            --net bs \
            -p 3000:3000 \
            -p 3001:3001 \
-           ustwo/browser-sync \
+           mandelbrew/browser-sync \
            start --proxy "myapp:8000" --files "css/*.css"
 ```
 
@@ -99,7 +99,7 @@ docker run -dt \
            --net bs \
            -p 3000:3000 \
            -p 3001:3001 \
-           ustwo/browser-sync \
+           mandelbrew/browser-sync \
            -v $(PWD)/config.js:/source/config.js \
            start --config config.js
 ```
@@ -120,12 +120,12 @@ in this situation you can only use the polling strategy as shown in `sandbox/pol
 
 ## Contact
 
-* open.source@ustwo.com
+* contact@mandelbrew.com
 
 
 ## Maintainers
 
-* Arnau Siches (@arnau)
+* Carlos Avila (@HeyCavila)
 
 ## License
 

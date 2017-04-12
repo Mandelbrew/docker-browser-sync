@@ -1,5 +1,5 @@
 name := browser-sync
-image_name := ustwo/$(name)
+image_name := mandelbrew/$(name)
 FLAGS = -v $(PWD)/sandbox:/source \
         --name $(name)
 
